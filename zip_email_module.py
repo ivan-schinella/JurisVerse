@@ -7,7 +7,7 @@ from email.message import EmailMessage
 import streamlit as st
 
 current_dir = get_parent_directory()
-path_docs = os.path.join(current_dir, "docs\\")
+path_docs = os.path.join(current_dir, "docs")
 path_abstracts = os.path.join(current_dir, "abstracts\\")
 
 # zip_file_name = "abstract.zip"
