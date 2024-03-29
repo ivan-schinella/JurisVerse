@@ -1,16 +1,13 @@
-from utils_module import get_secret_client
+import os
 import time
 import streamlit as st
-
-from supabase import Client, create_client
 import extra_streamlit_components as stx
 import bcrypt
+from supabase import Client, create_client
 
-secret_client = get_secret_client()
 
-s_url = secret_client.get_secret("supabase-url").value
-s_key = secret_client.get_secret("supabase-key").value
-
+s_url = os.environ["SUPABASE_URL"]
+s_key = os.environ["SUPABASE_KEY"]
 
 # User Authentication
 if "username" not in st.session_state:

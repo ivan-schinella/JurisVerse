@@ -1,18 +1,6 @@
 import os
 import streamlit as st
 
-from azure.identity import DefaultAzureCredential
-from azure.keyvault.secrets import SecretClient
-
-credential = DefaultAzureCredential()
-
-
-@st.cache_resource
-def get_secret_client():
-    return SecretClient(
-        vault_url="https://kv-test-juris.vault.azure.net/", credential=credential
-    )
-
 
 # Gestione path relativi e assoluti necessaria per il deploy:
 # @st.cache_resource

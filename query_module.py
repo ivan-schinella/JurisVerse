@@ -2,7 +2,6 @@ from utils_module import (
     get_files,
     map_value,
     verifica_file,
-    get_secret_client,
     get_parent_directory,
 )
 import os
@@ -24,11 +23,9 @@ from langchain.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 # from langchain_anthropic import ChatAnthropic
 
-secret_client = get_secret_client()
-
-openai_api_key = secret_client.get_secret("OPENAI-API-KEY").value
-mistral_api_key = secret_client.get_secret("MISTRAL-API-KEY").value
-anthropic_api_key = secret_client.get_secret("ANTHROPIC-API-KEY").value
+openai_api_key = os.environ['OPENAI-API-KEY']
+mistral_api_key = os.environ['MISTRAL-API-KEY']
+anthropic_api_key = os.environ['ANTHROPIC-API-KEY']
 
 # embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 # embeddings = HuggingFaceEmbeddings(model_name="paraphrase-multilingual-mpnet-base-v2")
