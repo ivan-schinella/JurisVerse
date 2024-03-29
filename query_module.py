@@ -124,7 +124,7 @@ def start_query():
                 ),
             )
 
-            loader = Docx2txtLoader(path_docs + file)
+            loader = Docx2txtLoader(f'{path_docs}/{file}')
             docs = loader.load()
 
             text = ""
@@ -157,7 +157,7 @@ def start_query():
             document.add_paragraph(answer)
 
         my_bar.empty()
-        document.save(path_abstracts + "Abstracts.docx")
+        document.save(f'{path_abstracts}/Abstracts.docx')
 
         # Invio automatico della email
         if st.session_state.auto_send_email and verifica_file(
