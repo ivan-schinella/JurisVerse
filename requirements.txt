@@ -1,0 +1,17 @@
+streamlit
+extra-streamlit-components
+streamlit-extras
+st-supabase-connection
+bcrypt
+selenium
+htmldocx
+faiss-cpu
+python-docx
+docx2txt
+langchain
+langchain-openai 
+# langchain-mistralai
+# langchain-anthropic
+# sentence-transformers
+azure-keyvault-secrets
+azure-identity
