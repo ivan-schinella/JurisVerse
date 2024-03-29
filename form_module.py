@@ -238,7 +238,7 @@ def my_query():
         my_index = 0
 
         current_dir = get_parent_directory()
-        path_docs = os.path.join(current_dir, "docs\\")
+        path_docs = os.path.join(current_dir, "docs")
 
         my_bar = st.progress(0)
 
