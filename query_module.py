@@ -16,14 +16,17 @@ from langchain_openai.embeddings import OpenAIEmbeddings
 from langchain_openai.chat_models import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnableLambda, RunnablePassthrough
+
 # from langchain_mistralai.chat_models import ChatMistralAI
 from langchain.prompts import PromptTemplate
+
 # from langchain_community.embeddings import HuggingFaceEmbeddings
 # from langchain_mistralai import MistralAIEmbeddings
 from langchain_core.output_parsers import StrOutputParser
+
 # from langchain_anthropic import ChatAnthropic
 
-openai_api_key = os.environ['OPENAI_API_KEY']
+openai_api_key = os.environ["OPENAI_API_KEY"]
 # mistral_api_key = os.environ['MISTRAL-API-KEY']
 # anthropic_api_key = os.environ['ANTHROPIC-API-KEY']
 
@@ -54,6 +57,7 @@ current_dir = get_parent_directory()
 
 path_docs = os.path.join(current_dir, "docs")
 path_abstracts = os.path.join(current_dir, "abstracts")
+
 
 def interroga():
     st.session_state.query = st.empty()
@@ -161,7 +165,7 @@ def start_query():
         my_bar.empty()
         # os.path.join(current_dir, "docs")
         # document.save(f'{path_abstracts}/Abstracts.docx')
-        document.save(os.path.join(current_dir, "Abstracts.docx"))
+        document.save(os.path.join(path_abstracts, "Abstracts.docx"))
 
         # Invio automatico della email
         if st.session_state.auto_send_email and verifica_file(
