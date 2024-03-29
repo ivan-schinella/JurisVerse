@@ -126,7 +126,7 @@ def start_query():
 
             # path_docs = os.path.join(current_dir, "docs")
             # loader = Docx2txtLoader(f'{path_docs}/{file}')
-            loader = Docx2txtLoader(os.path.join(current_dir, "docs"))
+            loader = Docx2txtLoader(os.path.join(path_docs, "docs"))
             docs = loader.load()
 
             text = ""
