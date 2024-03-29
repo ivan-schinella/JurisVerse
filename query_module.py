@@ -23,9 +23,9 @@ from langchain.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 # from langchain_anthropic import ChatAnthropic
 
-openai_api_key = os.environ['OPENAI-API-KEY']
-mistral_api_key = os.environ['MISTRAL-API-KEY']
-anthropic_api_key = os.environ['ANTHROPIC-API-KEY']
+openai_api_key = os.environ['OPENAI_API_KEY']
+# mistral_api_key = os.environ['MISTRAL-API-KEY']
+# anthropic_api_key = os.environ['ANTHROPIC-API-KEY']
 
 # embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 # embeddings = HuggingFaceEmbeddings(model_name="paraphrase-multilingual-mpnet-base-v2")

@@ -13,5 +13,5 @@ langchain-openai
 # langchain-mistralai
 # langchain-anthropic
 # sentence-transformers
-azure-keyvault-secrets
-azure-identity
+# azure-keyvault-secrets
+# azure-identity
