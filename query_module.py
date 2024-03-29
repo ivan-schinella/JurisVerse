@@ -124,6 +124,7 @@ def start_query():
                 ),
             )
 
+            # path_abstracts = os.path.join(current_dir, "abstracts")
             loader = Docx2txtLoader(f'{path_docs}/{file}')
             docs = loader.load()
 

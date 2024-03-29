@@ -56,7 +56,8 @@ def send_msg():
         f"Ciao {st.session_state.username},\nin allegato troverai il file compresso contenente tutte le sentenze trovate e il file word degli abstract elaborati.\n\nCordiali saluti\nJurisVerse"
     )
 
-    with open(path_abstracts + "Abstracts.docx", "rb") as f:
+    abstracts_file = os.path.join(path_abstracts, "Abstracts.docx")
+    with open(abstracts_file, "rb") as f:
         file_data = f.read()
     msg.add_attachment(
         file_data,
