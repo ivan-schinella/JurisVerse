@@ -15,8 +15,8 @@ def get_parent_directory():
 def create_directory():
 
     current_dir = get_parent_directory()
-    DOCS = os.path.join(current_dir, "docs\\")
-    ABSTRACTS = os.path.join(current_dir, "abstracts\\")
+    DOCS = os.path.join(current_dir, "docs")
+    ABSTRACTS = os.path.join(current_dir, "abstracts")
     directories = [DOCS, ABSTRACTS]
 
     for directory in directories:

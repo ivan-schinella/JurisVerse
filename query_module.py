@@ -52,8 +52,8 @@ prompt = ChatPromptTemplate.from_template(template)
 
 current_dir = get_parent_directory()
 
-path_docs = os.path.join(current_dir, "docs\\")
-path_abstracts = os.path.join(current_dir, "abstracts\\")
+path_docs = os.path.join(current_dir, "docs")
+path_abstracts = os.path.join(current_dir, "abstracts")
 
 def interroga():
     st.session_state.query = st.empty()
