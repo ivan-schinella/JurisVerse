@@ -8,7 +8,7 @@ import streamlit as st
 
 current_dir = get_parent_directory()
 path_docs = os.path.join(current_dir, "docs")
-path_abstracts = os.path.join(current_dir, "abstracts\\")
+path_abstracts = os.path.join(current_dir, "abstracts")
 
 # zip_file_name = "abstract.zip"
 zip_file_name = os.path.join(current_dir, "abstract.zip")
